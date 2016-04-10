@@ -1,0 +1,70 @@
+/*comments*/
+/*layout*/
+
+body {
+	width: 1024px;
+	margin: 0 auto;
+	background: blue:;
+
+}
+
+.column-section /*class*/, header, footer, #reflection /*id*/ {
+	padding: xpx
+	margin: xpx;
+}
+
+/*colors*/
+
+body{
+	background: red;
+	/*this is redundant, but if you make changes here, it will use theses setting instead of the first ones*/
+	/*use hex colors for more spefici colors*/
+}
+
+header h1 /*to change just that part of the header*/{
+	color: ffffff;
+}
+
+
+/*fonts*/
+/*google fonts, follow directions*/
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size:0.8em; e/*m is default browser size*/
+	line height: 1.5; /*line spacing*/
+}
+
+/*Media Queries*/
+/*media queries adjust when changing the size of the window*/
+
+@media (max-width: 960px) {
+	body {
+		width: 100px%;
+	}
+
+	.column-section {
+		float: none;
+		width: inherit; /*inherit takes width from whatever is above it*/
+	}
+
+}
+
+for link colors:
+a {color: green;
+}
+
+a:hover {
+	color: purple;
+}
+
+for tables:
+<table></table>
+
+<tr> table row
+<th> is heading
+
+
+table heading: <th></th>
+
