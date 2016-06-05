@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+
+  root 'recipes#index'
+  get "/recipes", to: 'recipes#index'
+  get "/recipes/:id", to: 'recipes#show'
+  get "/recipes/new", to: 'recipes#new'
+  post "/recipes", to: 'recipes#create'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

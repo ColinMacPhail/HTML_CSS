@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Product_line</th>
+    <th>Electric</th>
+    <th>Acoustic</th>
+  </tr>
+
+  <%= brands.each do |brand| %>
+  <tr>
+    <td> <%= brand.product_line %> </td>
+    <td> <%= brand.electric %> </td>
+    <td> <%= brand.acoustic %>
+    </td>
+    <% end %>
+  </table>

@@ -1,0 +1,14 @@
+<h1>Calculator</h1>
+
+<div id="numbers-game">
+  <div class="row">
+    <% (1..10).each do |number| %>
+      <div class="box col-md-2" onclick="add(<%= number %>)"><%= number %></div>
+      <div class="col-md-1"> </div>
+    <% end %>
+  </div>
+  
+</div>
+
+<h1>Sum:</h1>
+<h2 id="sum"<>0</h2>

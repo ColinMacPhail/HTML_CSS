@@ -1,0 +1,19 @@
+<table class="table">
+  <tr>
+    <th>Colin</th>
+    <th>MacPhail</th>
+    <th>Ingredients</th>
+    <th>Directions</th>
+  </tr>
+  <% @recipes.each do |recipe| %>
+  <tr>
+    <td><%= link_to recipe.title, "/recipes/#{recipe.id}" %></td>
+    <td><%= recipe.chef %></td>
+    <td><%= recipe.ingredients %></td>
+    <td><%= recipe.directions %></td>
+  </tr>
+  <% end %>
+</table>
+
+
+

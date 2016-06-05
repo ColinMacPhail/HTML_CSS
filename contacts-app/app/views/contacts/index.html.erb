@@ -1,0 +1,49 @@
+<table class="table">
+  <thead>
+    <tr>
+  
+      <th>First Name</th>
+      <th>Phone Number</th>
+      <th>Email</th>
+      <th>Address</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+
+
+  
+    <!-- <tr>
+      <th scope="row">1</th>
+      <td>Colin</td>
+      <td>MacPhail</td>
+      <td>262-327-6242</td>
+      <td>colinmacphail@gmail.com</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>555-123-4567</td>
+      <td>jacobthornton@gmail.com
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>555-222-9999</td>
+      <td>larrythebird@gmail.com</td>
+    </tr>
+     -->
+     <% @contacts.each do |contact| %>
+     <tr>
+      <td><%= contact.first_name %></td>
+      <td><%= contact.phone_number %></td>
+       <td><%= contact.email %></td>
+    </tr>
+     <% end %>
+
+
+  </tbody>
+</table>

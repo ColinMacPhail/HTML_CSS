@@ -1,0 +1,36 @@
+
+
+<%= form_tag "/", method: do get do %>
+
+  <div>
+    <%= label_tag :city %>
+    <%= text_field_tag :city %>
+  </div>
+
+<div>
+    <%= label_tag :state %>
+    <%= text_field_tag :states %>
+  </div>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>High</th>
+    <th>Low</th>
+    <th>
+  </tr>
+  <% @forecasts.each do |forecast| %>
+  <tr>
+    <td><%= forecast["Date"]%></td>
+    <td><%= forecast["High"]%></td>
+    <td><%= forecast["Low"]%></td>
+
+
+  </tr>
+  <% end %>
+</table>
+
+
+
+
+forecasts = ["query"]["results"]["channel"]["item"]["forecast"][0]
